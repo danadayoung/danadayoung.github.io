@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <script src="src/index.js"></script>
-    <script src="src/styles.css"></script>
-  </head>
 
-  <body>
-    <div class="calculator">
-      <div class="resultView" value="result">0</div>
-      <div class="operationClear" value="clear">C</div>
-      <div class="operationAdd" value="add">+</div>
-      <div class="operationSubtract" value="subtract">-</div>
-      <div class="operationMultiply" value="multiply">X</div>
-      <div class="operationDivide" value="divide">/</div>
-      <div class="numberSeven" value="7">7</div>
-      <div class="numberEight" value="8">8</div>
-      <div class="numberNine" value="9">9</div>
-      <div class="numberFour" value="4">4</div>
-      <div class="numberFive" value="5">5</div>
-      <div class="numberSix" value="6">6</div>
-      <div class="numberOne" value="1">1</div>
-      <div class="numberTwo" value="2">2</div>
-      <div class="numberThree" value="3">3</div>
-      <div class="numberZero" value="0">0</div>
-      <div class="operationSum" value="sum">=</div>
-    </div>
-  </body>
+<head>
+  <title>Workspace</title>
+  <meta charset="UTF-8" />
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="wrap">
+  <div class="js-clock">
+    <h1>00:00</h1>
+  </div>
+  <form class="js-form" class="showing">
+    <label for="getUsername">What is your name?</label>
+    <input type="text" id="getUsername">
+  </form>
+  <h3 class="js-greetings"></h3>
+  <form class="js-todo">
+    <label for="writeTodo">Things to do today</label>
+    <input type="text" id="writeTodo">
+  </form>
+  <ul class="js-todoList">
+  </ul>
+  <p class="js-weather"></p>
+</body>
+<script src="src/bg.js"></script>
+<script src="src/user.js"></script>
+<script src="src/todo.js"></script>
+<script src="src/clock.js"></script>
+<script src="src/weather.js"></script>
+
 </html>
